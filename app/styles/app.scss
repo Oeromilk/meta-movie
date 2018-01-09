@@ -1,0 +1,51 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.center-item {
+  position: absolute;
+  width: 50vw;
+  top: 25%;
+  left: 50%;
+  margin-left: -25vw; /* margin is -0.5 * dimension */
+}
+
+@media (max-width: 767px){
+  .center-item {
+    position: absolute;
+    width: 75vw;
+    top: 25%;
+    left: 50%;
+    margin-left: -37.5vw; /* margin is -0.5 * dimension */
+  }
+}
+
+body {
+  padding-top: 50px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.input-heading {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.rating {
+  font-size: 2.5em;
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.3);
+}
